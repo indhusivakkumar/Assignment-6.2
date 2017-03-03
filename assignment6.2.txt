@@ -1,0 +1,93 @@
+1. Why MapReduce program is needed in Pig Programming?
+
+*Mapreduce is needed when  the job has the use of cross products,distributed cache and joins.
+*Mapreduce is required if the job needs optimization at a particular stage of processing .
+*Mapreduce is used  when the  developers of hadoop require definite driver program control 
+*Hadoop developers should use MapReduce when a reasonable  amount of testability is needed
+ for combining lots of large data sets  
+
+2. What are advantages of Pig over MapReduce?
+
+
+*Pig is easy to learn and use when compared to mapreduce
+*Inbuilt optimization for Mapreduce jobs are provided by pig whereas in mapreduce the user needs to develop optimization.
+*The main advantage of PIG over MapReduce is that PIG is more concise than Mapreduce.That is 100 lines of Java code 
+in Mapreduce can be converted to 10 Lines in PIG
+*PIG has reduced development time.
+*Developer has less chance to write java level bugs
+*Pig is modifiable.We can make changes to the script at any time.
+*Pig is a higher level of abstraction but mapreduce is a lower level of abstraction.
+
+3. What is Pig engine and what is its importance?
+
+Pig Engine:
+            * A component which is present in Pig that takes Pig latin scripts as input and converts them into mapreduce jobs
+  and produces it as output.
+            * It parses, optimizes, and automatically executes PigLatin scripts and converts to mapreduce jobs.
+
+Importance:
+ *Pig Engine acts as an interpreter between Pig Latin script and Mapreduce jobs by converting the Pig latin script to 
+mapreduce jobs.
+ *It provides an environment to execute Pig Latin scripts and convert them into Mapreduce job simultaneously.
+
+
+
+
+4. What are the modes of Pig execution?
+
+There are two modes in which we can execute Pig.They are
+
+ *Local mode
+ *Mapreduce mode
+
+Local mode:  
+
+ There is no need for HDFS or Hadoop in Local mode.
+All the files are installed and run from the local host and local file system.
+Local mode is used only for testing purpose
+
+Mapreduce mode
+
+HDFS and Hadoop are needed in Mapreduce mode.
+The data which is present in the Hadoop File System (HDFS) is loaded and executed using Apache Pig.
+If we process the data by executing the Pig Latin statements,then a MapReduce job is invoked  at the back-end in order 
+to perform a certain specific operation on the data that is present in the HDFS.
+
+5. What is Grunt Shell in Pig?
+     *The main purpose of Grunt Shell is to write Pig Latin Scripts.
+     *Grunt shell provides several shell and utility commands.
+     *We can run the Pig in the shell after invoking the Grunt Shell
+     *The  commands which are supported by  Grunt  includes DFS commands,pig commands as well as a  others.
+
+6. What are the features of Pig Latin language?
+*It is case sensitive.
+*It is extensible.We can create our own functions for performing special processing
+*It provides  standard data-processing operations.
+*It provides Optimization Oppurtunities.The way of task encoding permits the system to optimize the
+ execution automatically and thus enables the user to focus on semantics.
+*Ease of Programming:Complex tasks with multiple interrelated data transformations are
+ explicitly encoded as data flow sequences,thus  making them easy to write, understand, and maintain.
+
+
+
+
+7. Is Pig Latin commands case sensitive?
+
+  yes, Pig Latin commands are case sensitive.The names of fields and relations,parameter
+names and all Pig Latin commands are case sensitive.
+eg:
+-The Function names PigSample and ADD are case sensitive.
+
+
+
+8. What is a data flow language?
+
+ Dataflow programming  language is a programming platform that models a program as a directed graph of data which 
+is  flowing between operations.
+Hence it implements dataflow principles and architecture. 
+Dataflow programming languages possess some of the  features of functional languages,.
+Some authors use the term Datastream instead of Dataflow to avoid confusion with Dataflow Computing or Dataflow
+ architecture, based on an indeterministic machine paradigm. 
+Dataflow programming was pioneered by Jack Dennis and his graduate students at MIT in the 1960s.
+Dataflow programming were generally developed in order to bring some functional concepts to a language more
+ suitable for numeric processing. 
